@@ -31,6 +31,24 @@
             <artifactId>camel-jackson</artifactId>
             <version>3.0.0-RC3</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-jetty</artifactId>
+            <version>3.0.0-RC3</version>
+            <!-- use the same version as your Camel core version -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-http</artifactId>
+            <version>3.0.0-RC3</version>
+            <!-- use the same version as your Camel core version -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.camel</groupId>
+            <artifactId>camel-ahc-ws</artifactId>
+            <version>3.0.0-RC3</version>
+            <!-- use the same version as your Camel core version -->
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.apache.camel/camel-spring-boot-starter -->
         <dependency>
             <groupId>org.apache.camel</groupId>

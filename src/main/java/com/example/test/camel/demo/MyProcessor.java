@@ -13,6 +13,7 @@ public class MyProcessor implements org.apache.camel.Processor {
 
     @Override
     public void process(Exchange exchange) throws Exception {
+        System.out.println("finnaly we are here");
         System.out.println(exchange.getIn().getBody());
     }
 
