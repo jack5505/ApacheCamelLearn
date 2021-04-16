@@ -38,7 +38,8 @@ public class ApplicationResources extends RouteBuilder {
 
 
         from("direct:getContact").setHeader(Exchange.HTTP_METHOD, simple("GET"))
-                .to("http://srv-bss3:8080/api/list?bridgeEndpoint=true").log("here we go Jack").process(new MyProcessor());
+                .to("http://srv-bss3:8080/api/list?bridgeEndpoint=true").convertBodyTo(String.class).
+                log("here we go Jack  ${body}" );
 
 
 
